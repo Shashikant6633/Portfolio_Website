@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form</header>
+      <form action="#" class="form" id="form1">
+        <div class="input-box">
+          <label for="username">UserName</label>
+          <input id="username" type="text" name="username" placeholder="Enter full name">
+          <div class="error"></div>
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email Address</label>
+          <input id="email" type="text" name="email" placeholder="Enter email address">
+          <div class="error"></div>
+        </div>
+
+        <div class="input-box">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            <div class="error"></div>
+          </div>
+
+          <div class="input-box">
+            <label for="password">Confirm Password</label>
+            <input id="password2" type="password" placeholder="Enter password">
+            <div class="error"></div>
+          </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" placeholder="Enter phone number" pattern="[0-9]{10}">
+            <div class="error"></div>
+          </div>
+          <div class="input-box">
+            <label for="birthdate">Birth Date</label>
+            <input type="date" id="birthdate" placeholder="Enter birth date" max="2023-12-31">
+            <div class="error"></div>
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender">
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender">
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter address">
+          <div class="column">
+            <div class="select-box">
+              <select required>
+                <option hidden>Country</option>
+                <option>India</option>
+                <option>Japan</option>
+                <option>America</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <label for="upload">Upload a PhotoCopy</label>
+          <br>
+          <input type="file" id="upload" style="border: none;" accept="image/*">
+          <div class="error"></div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <script defer src="signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"></script>
+    <script defer src="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Allegis Group</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#content">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#languages">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#table">Table</a>
+                </li>
+                <li>
+                    <a href="#counter1">Counter</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Apps</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a target="_blank" href="digitalclock.html">Digital Clock</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="stopwatch.html">Stopwatch</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Top Navbar -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <!--change top navbar box color from here -->
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info"
+                        style="background-color: grey; border-color: grey;">
+                        <i class="fas fa-duotone fa-bars"></i>
+                        <span></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <button class="navbtn"><a class="nav-link" target="_blank" href="login.html"
+                                        style="color: black;">Login</a></button>
+                            </li>
+                            <li class="nav-item active">
+                                <button class="navbtn1"><a class="nav-link" target="_blank" href="signup.html"
+                                        style="color: black;">Sign up</a></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Home Page -->
+            <header id="home">
+
+                <div class="row banner">
+                    <div class="banner-text">
+                        <h1 class="responsive-headline">I'm Shashikant.</h1>
+                        <h4 style="color:white">FRONTEND WEB-DEVELOPER</h4>
+                        <hr />
+
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- About Us Page -->
+
+            <section class="about-us" id="about">
+
+
+                <div class="responsive-container-block bigContainer">
+                    <div class="responsive-container-block Container">
+                        <img class="mainImg" src="images/me.png">
+                        <div class="allText aboveText">
+                            <p class="text-blk headingText" style="color: black;">
+                                About Me
+                            </p>
+                            <p class="text-blk subHeadingText" style="color: rgb(70, 67, 67);">
+                                Front-end Developer & <span style="color: rgb(89, 89, 223);">Designer</span>
+                            </p>
+                            <p class="text-blk description">
+                                Hi! I am Shashikant Shinde.I have completed my graduation in 2023 in Electronics and
+                                Telecommunication Engineering from Modern Education Society's College Of Engineering
+                                Pune.I am Familiar with the programming languages like C,Core Java,Advanced
+                                Java(Swing,Applets,JDBC),MySQL,HTML CSS and JavaScript.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- skills section -->
+            <section id="languages">
+                <h1 id="skill-head">Skills</h1>
+                <div class="wrapper1">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img"><img src="images/c1-removebg-preview.png" alt="img" draggable="false">
+                            </div>
+                            <h2>C</h2>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="images/java-logo-1.png" alt="img" draggable="false"></div>
+                            <h2>JAVA</h2>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="images/MySQL1-Logo.jpg" alt="img" draggable="false"></div>
+                            <h2>MySQL</h2>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="images/html1.png" alt="img" draggable="false"></div>
+                            <h2>HTML</h2>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="images/css1.png" alt="img" draggable="false"></div>
+                            <h2>CSS</h2>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="images/js-removebg-preview.png" alt="img" draggable="false">
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+
+            </section>
+
+
+            <!-- Project Section -->
+            <section id="projects" style="margin-top: 40px;">
+                <div class="container mt-3">
+                    <h1 class="text-center" style="color: white;">Projects</h1>
+                    <div class="row">
+                        <div class="col-lg-4 mt-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/proj1 (2).png" alt="Card image"
+                                    style="width:100%; height: 300px;">
+                                <div class="card-body">
+                                    <h6 class="card-title" style="height: 20px;">Project 1: FingerPrint Detection of
+                                        newly born infants</h4>
+                                        <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-4">
+                            <div class="card portfolioContent">
+                                <img class="card-img-top" src="images/proj12.png" alt="Card image"
+                                    style="width:100%; height: 300px;">
+                                <div class="card-body">
+                                    <h6 class="card-title" style="height: 41px;">Project 2: RFID Based Car Parking
+                                        System</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-4">
+                            <div class="card portfolioContent">
+                                <img class="card-img-top" src="images/proj3.png" alt="Card image"
+                                    style="width:100%; height: 300px;">
+                                <div class="card-body">
+                                    <h6 class="card-title" style="height: 18px;">Project 3: Crop forecast and harvest
+                                        value expectation using ML</h4>
+                                        <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </section>
+
+            <!-- Table -->
+            <div class="container-table" id="table">
+                <h1 class="table-head">Table</h1>
+                <table id="myTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Sr No.</th>
+                            <th>Name</th>
+                            <th>Designation</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>  
+
+                            <td>001</td>  
+                
+                            <td><a href="https://github.com/vipulsawant033/Portfolio_Vipul" target="_blank" style="color: blue;">Vipul Sawant</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Pune</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>002</td>  
+                
+                            <td><a href="https://github.com/Dipakborbale/Portfolio_website" target="_blank" style="color: blue;">Dipak Borbale</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Pune</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>003</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/POC-Portfolio-Dev" target="_blank" style="color: blue;">Tejas Sonawane</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Pune</td>  
+                
+                          </tr>  
+                
+                       <tr>  
+                
+                            <td>004</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/jaideep" target="_blank" style="color: blue;">Jaideep Reddy kolan</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>005</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/pranay" target="_blank" style="color: blue;">Pranay Mantri</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>006</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/sahithi" target="_blank" style="color: blue;">Sai Sahithi, Chowdarapu</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                     
+                
+                       <tr>  
+                
+                            <td>007</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/manisri" target="_blank" style="color: blue;">Manisri, Chippa</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>008</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/sindhuja" target="_blank" style="color: blue;">Sindhuja, Dasoju</a></td>  
+                
+                            <td>Gradute Trainee Engineer</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>009</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/narender" target="_blank" style="color: blue;">Narendra Kota</a></td>  
+                
+                            <td>Senior Delivery Manager</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                     
+                
+                        <tr>  
+                
+                            <td>010</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/sumedh" target="_blank" style="color: blue;">G Sumedh</a></td>  
+                
+                            <td>Senior Software Engineer</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>011</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/ambika" target="_blank" style="color: blue;">Losara Ambika</a></td>  
+                
+                            <td>Senior Software Engineer</td>  
+                
+                            <td>Hyderabad</td>  
+                
+                          </tr>  
+                
+                
+                          <tr>  
+                
+                            <td>013</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/sushil" target="_blank" style="color: blue;">Pai, Sushil</a></td>  
+                
+                            <td>Project Manager</td>  
+                
+                            <td>Banglore</td>  
+                
+                          </tr>  
+                
+                          <tr>  
+                
+                            <td>014</td>  
+                
+                            <td><a href="https://github.com/tejas-4502/dummy-port/blob/main/nitesh" target="_blank" style="color: blue;">Nitesh Kumar</a></td>  
+                
+                            <td>Technical Lead</td>  
+                
+                            <td>Banglore</td>  
+                
+                          </tr>  
+                
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Counter -->
+            <h1 class="counter-head" style="margin-top: 20px;">Counter</h1>
+            <div class="counter-up" id="counter1">
+                <div class="content">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-history"></i></div>
+                        <div class="counter" data-count="724">0</div>
+                        <div class="text">Working Hours</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-gift"></i></div>
+                        <div class="counter" data-count="500">0</div>
+                        <div class="text">Completed Projects</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-users"></i></div>
+                        <div class="counter" data-count="1000">0</div>
+                        <div class="text">Happy Clients</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-trophy"></i></div>
+                        <div class="counter" data-count="120">0</div>
+                        <div class="text">Achievements</div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="footer">
+                <footer id="contact">
+                    <h3 style="margin-left: 20px; font-family: sans-serif;">Contact Details</h1>
+                        <p class="footer">Name:Shashikant Shinde</p>
+                        <p class="footer">Contact:7768876633</p>
+                        <p class="footer">Address:Gardenia Phase-2 Soc,Wadgaon Sher Pune-14.</p>
+                        <p class="footer">E-mail:shindeshashikant6633@gmail.com</p>
+
+                        <div class="container text-center">
+                            <a href="#" target="_blank" class="twitter" style="margin-right: 50px; margin-left: 40px; font-size: 20px;"><i id="icon" class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/shashikant-shinde-11b7b7210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin" style="margin-right: 50px; font-size: 20px;"><i id="icon" class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Shashikant6633" target="_blank" class="github" style="margin-right: 50px; font-size: 20px;"><i id="icon" class="fa-brands fa-github"></i></a>
+                        </div>
+                </footer>
+            </section>
+
+
+
+
+            <!-- jQuery -->
+            <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
+            <!-- Data Table JS -->
+            <script src='https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js'></script>
+            <script src='https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js'></script>
+            <script src='https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js'></script>
+            <!-- jQuery CDN - Slim version (=without AJAX) -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+            <!-- jQuery Custom Scroller CDN -->
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="index.js"></script>
+
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+            <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
